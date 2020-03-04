@@ -33,7 +33,32 @@ import Foundation
  */
 // Begin your work here...
 
+// Define a triangle
+struct triangle {
+    
+    // MARK: Properties
+    var base: Double
+    var height: Double
 
+    
+    // Computed property to return the raw area
+    var areaOfTriangle: Double {
+    return (base * height) / 2
+        
+    }
+    
+    // Computed property to return a description of the area
+       var triangleDescription: String {
+           return "The area of the Triangle is " + String(format: "%.1f", areaOfTriangle) + " square units."
+       }
+}
+    var oneTriangle = triangle (base: 8, height: 4)
+    print(oneTriangle.areaOfTriangle)
+
+
+
+
+ 
 
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
