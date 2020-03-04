@@ -80,9 +80,64 @@ struct sphere {
             print(oneSphere.volumeSphere)
             print(oneSphere.areaSphere)
 
+struct rectangle{
+    // MARK: Properties
+    var lenght: Double
+    var height: Double
+    var width: Double
+    
+    // surface area
+    var rectangleArea: Double{
+        return Double(2) * (lenght*height + width*height + width*lenght)
+    }
+    
+    // Volume
+    var rectangleVolume: Double {
+    return lenght * height * width
+    }
+    
+    // Computer property description of area
+    var rectangleAreaDescription: Double {
+    return "The area of the rectangle is " + String(format: "%.1f", rectangleArea)
 
+    }
+    
+    var rectangleVolumeaDescription: Double {
+    return "The area of the rectangle is " + String(format: "%.1f", rectangleVolume)
+
+    }
+}
+
+    // Create Rectangle
+    var oneRectangle = rectangle(lenght: 12, height: 8, width: 16)
+    print(oneRectangle.rectangleArea)
+    print(oneRectangle.rectangleVolume)
 
  
+// Triangular prism
+
+struct TriangularPrism {
+    
+    // MARK: Properties
+    var base1: Double
+    var base2 Double
+    var base3: Double
+    var height: Double
+    var baseHeight: Double
+    
+    var TriangularPrismBase: String {
+    return "The Triangular Prism has a base of \(base1), \(base2) and \(base3) a height on the base of \ (baseHeight) and a height of \(height)"
+}
+    var TriangularPrismVolume: String {
+return "The triangular Prims has a volume of \(baseB*height*heightOnBase/2)"
+
+        var TriangularPrismArea: String {
+        return ""The triangular Prims has Area of \ ((baseA+baseB+baseC)*height+heightOnBase*baseB)"
+        }
+
+
+}
+
 
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
