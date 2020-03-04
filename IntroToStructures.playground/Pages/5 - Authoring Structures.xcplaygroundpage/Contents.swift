@@ -56,6 +56,30 @@ struct triangle {
     print(oneTriangle.areaOfTriangle)
 
 
+struct sphere {
+    
+    // MARK: Properties
+    var radius:Double
+    
+    // Computed property to return the raw area
+    var describeSphere:String {
+           return "The sphere has a radius of \(radius)"
+       }
+
+        var volumeSphere:String{
+            return "The sphere has a volume of " + String(format:"%.2f",(4*Double.pi * pow(radius, 3) / 3))
+       }
+
+        var areaSphere:String{
+           return "The shpere has a surface area of " + String(format:"%.2f",(4*Double.pi * pow(radius,2)))
+            
+    }
+}
+            var oneSphere = sphere(radius:5)
+            print(oneSphere.describeSphere)
+            print(oneSphere.volumeSphere)
+            print(oneSphere.areaSphere)
+
 
 
  
